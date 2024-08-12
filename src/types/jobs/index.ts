@@ -21,3 +21,11 @@ export type JobsDetailTextProps = {
   color: string
   details: string[]
 }
+
+export type JobsItemProps = {
+  id: number
+  position: string
+  team: string
+  jobDescription: string
+  tag: string
+}
