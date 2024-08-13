@@ -1,6 +1,7 @@
 <template>
-  <UContainer class="flex flex-col text-black">
+  <UContainer class="flex flex-col gap-20 text-black">
     <HomeBanner />
+    <HomeAboutUs />
   </UContainer>
 </template>
 
