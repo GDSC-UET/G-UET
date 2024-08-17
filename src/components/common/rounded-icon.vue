@@ -4,7 +4,7 @@
     :class="[
       size === 'lg' ? 'h-[100px] w-[100px]' : 'h-16 w-16',
       onlyView && 'hover:cursor-default',
-      'flex items-center rounded-full hover:bg-blue-500'
+      'flex items-center rounded-full'
     ]"
   >
     <template #trailing>

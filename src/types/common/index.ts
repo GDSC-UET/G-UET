@@ -14,12 +14,11 @@ export type CommonTitleTextProps = {
   suffix?: string
 }
 
-type RoundedIconColor = 'red' | 'blue' | 'yellow' | 'green' | 'primary'
 type RoundedIconSize = 'md' | 'lg'
 
 export type CommonRoundedIconProps = {
   icon: string
-  color: RoundedIconColor
+  color: string
   size: RoundedIconSize
   onlyView?: boolean
 }
