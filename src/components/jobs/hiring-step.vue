@@ -4,7 +4,7 @@
     @click="changeIndex"
     :class="!isDetailOn && 'opacity-60'"
   >
-    <CommonRoundedIcon :icon="icon" color="primary" size="lg" />
+    <CommonRoundedIcon :icon="icon" color="primary" size="lg" class="hover:bg-blue-500" />
     <span class="text-xl">{{ name }}</span>
     <span class="text-base sm:hidden" :class="!isDetailOn && 'hidden'">{{ detail }}</span>
   </div>
