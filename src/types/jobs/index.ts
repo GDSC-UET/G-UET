@@ -29,3 +29,7 @@ export type JobsItemProps = {
   jobDescription: string
   tag: string
 }
+
+export type JobsApplyProps = {
+  position: string
+}
