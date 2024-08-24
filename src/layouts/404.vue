@@ -1,6 +1,6 @@
 <template>
   <div class="flex min-h-screen flex-col">
-    <Header />
+    <NotFoundHeader />
     <div class="flex-grow">
       <slot />
     </div>
