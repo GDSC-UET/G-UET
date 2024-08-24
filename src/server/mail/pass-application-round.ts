@@ -1,4 +1,4 @@
-export const PassCodingTest = (
+export const PassApplicationRound = (
   name: string,
   hiringProcessLink: string,
   position: string,
