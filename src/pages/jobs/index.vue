@@ -1,20 +1,29 @@
 <template>
-  <UContainer>
-    <div class="mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-      <JobsItem
-        v-for="job in jobs"
-        :key="job.id"
-        :position="job.position"
-        :team="job.team"
-        :job-description="job.jobDescription"
-        :tag="job.tag"
-        :id="job.id"
-      />
+  <UContainer class="mt-8 flex flex-col items-center gap-12">
+    <div class="w-full max-w-[500px]">
+      <CommonTitleText prefix="Find your most" text="suitable position" />
     </div>
+    <div class="flex flex-col items-center gap-4">
+      <CommonSearch />
+      <USelect v-model="teamSelect" :options="teams" size="lg" />
+    </div>
+    <JobsNoJobsFound />
   </UContainer>
 </template>
 
 <script setup lang="ts">
+const teams = ref([
+  'All Teams',
+  'Technical',
+  'Event',
+  'Human Resources',
+  'Marketing',
+  'Alumni',
+  'Board of Leader'
+])
+
+const teamSelect = ref([teams.value[0]])
+
 const jobs = ref([
   {
     id: 1,
