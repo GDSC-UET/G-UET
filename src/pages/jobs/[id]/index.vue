@@ -44,7 +44,7 @@ const handleSearch = (searchData: string) => {
 }
 
 const position = ref('Frontend Developer')
-const team = ref('Technical')
+const team = ref('Board of Leader')
 const jobDescription = ref([
   'Lorem ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum',
   'Lorem ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum',
