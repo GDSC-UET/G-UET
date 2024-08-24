@@ -1,7 +1,7 @@
 <template>
-  <div class="relative">
+  <div class="relative w-fit">
     <UBadge :color="color" :label="team" size="lg" class="relative mt-2" />
-    <div class="absolute bottom-[0.5px] flex h-[2px] w-full">
+    <div v-if="team === 'Board of Leader'" class="absolute bottom-[0.5px] flex h-[2px] w-full">
       <div class="bg-primary grow rounded-bl-lg"></div>
       <div class="grow bg-red-500"></div>
       <div class="grow bg-green-500"></div>
