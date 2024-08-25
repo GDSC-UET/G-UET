@@ -27,7 +27,7 @@
 import { useWindowSize } from '@vueuse/core'
 
 const { width } = useWindowSize()
-const avatarUrl = ref('https://avatars.githubusercontent.com/u/739984?v=4')
+const avatarUrl = ref('/lead.png')
 
 const avatarSize = computed(() => (width.value < 640 ? 'sm' : 'md'))
 
