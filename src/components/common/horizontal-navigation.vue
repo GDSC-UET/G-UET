@@ -1,5 +1,5 @@
 <template>
-  <UHorizontalNavigation :links="links" class="flex hidden justify-end sm:block">
+  <UHorizontalNavigation :links="links" class="flex hidden justify-end lg:block">
     <template #default="{ link, isActive }">
       <span :class="isActive && 'text-gray-900'" class="group-hover:text-primary">{{
         link.label
