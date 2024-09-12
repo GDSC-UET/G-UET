@@ -1,7 +1,7 @@
 <template>
   <div class="relative w-fit">
-    <UBadge :color="color" :label="team" size="lg" class="relative mt-2" />
-    <div v-if="team === 'Board of Leader'" class="absolute bottom-[0.5px] flex h-[2px] w-full">
+    <UBadge :label="label" :color="color" variant="outline" size="lg" class="relative" />
+    <div v-if="label === 'Board of Leader'" class="absolute bottom-[0.5px] flex h-[2px] w-full">
       <div class="bg-primary grow rounded-bl-lg"></div>
       <div class="grow bg-red-500"></div>
       <div class="grow bg-green-500"></div>
@@ -11,8 +11,9 @@
 </template>
 
 <script setup lang="ts">
-import type { CommonBadgeProps } from '~/types/common'
-const props = defineProps<CommonBadgeProps>()
+import type { MembersBadge } from '~/types/members'
+
+const props = defineProps<MembersBadge>()
 
 const badgeColors = [
   { team: 'Technical', color: 'red' },
@@ -24,7 +25,8 @@ const badgeColors = [
 ]
 
 const color = computed(() => {
-  const index = badgeColors.findIndex((badgeColor) => badgeColor.team === props.team)
+  const index = badgeColors.findIndex((badgeColor) => badgeColor.team === props.label)
+  console.log(props.label)
   return badgeColors[index].color
 })
 </script>

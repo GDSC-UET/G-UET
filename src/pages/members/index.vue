@@ -8,7 +8,12 @@
         <USelect v-model="genSelect" :options="gens" size="lg" />
       </div>
     </div>
-    <MembersNoMembersFound />
+    <MembersCard
+      avatar="/lead.png"
+      name="Tran Manh Dung"
+      position="Founder/President"
+      team="Board of Leader"
+    />
   </UContainer>
 </template>
 
