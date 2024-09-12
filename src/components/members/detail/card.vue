@@ -2,8 +2,8 @@
   <div class="flex flex-col items-center gap-3">
     <NuxtImg :src="avatar" class="w-[200px] rounded-full border border-gray-300 md:w-[250px]" />
     <span class="text-lg font-bold">{{ name }}</span>
-    <span class="text-sm">{{ position }}</span>
-    <span class="text-sm">{{ school }}</span>
+    <span class="text-center text-sm">{{ position }}</span>
+    <span class="text-center text-sm">{{ school }}</span>
     <CommonBadge :team="team" type="solid" />
     <div class="h-[2px] w-[220px] bg-gray-300"></div>
     <span class="text-base font-bold">Timeline Activities</span>

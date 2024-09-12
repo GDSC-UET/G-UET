@@ -8,12 +8,16 @@
         <USelect v-model="genSelect" :options="gens" size="lg" />
       </div>
     </div>
-    <MembersCard
-      avatar="/lead.png"
-      name="Tran Manh Dung"
-      position="Founder/President"
-      team="Board of Leader"
-    />
+    <div class="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-4">
+      <nuxt-link v-for="member in members" :key="member.id" :to="`/members/${member.id}`">
+        <MembersCard
+          :avatar="member.avatar"
+          :name="member.name"
+          :position="member.position"
+          :team="member.team"
+        />
+      </nuxt-link>
+    </div>
   </UContainer>
 </template>
 
@@ -32,4 +36,49 @@ const gens = ref(['All Gens', 'Gen 0', 'Gen 1'])
 
 const teamSelect = ref([teams.value[0]])
 const genSelect = ref([gens.value[0]])
+
+const members = ref([
+  {
+    id: 1,
+    avatar: '/lead.png',
+    name: 'Tran Manh Dung',
+    position: 'Founder/President',
+    team: 'Board of Leader'
+  },
+  {
+    id: 2,
+    avatar: '/lead.png',
+    name: 'Tran Manh Dung',
+    position: 'Founder/President',
+    team: 'Board of Leader'
+  },
+  {
+    id: 3,
+    avatar: '/lead.png',
+    name: 'Tran Manh Dung',
+    position: 'Founder/President',
+    team: 'Board of Leader'
+  },
+  {
+    id: 4,
+    avatar: '/lead.png',
+    name: 'Tran Manh Dung',
+    position: 'Founder/President',
+    team: 'Board of Leader'
+  },
+  {
+    id: 5,
+    avatar: '/lead.png',
+    name: 'Tran Manh Dung',
+    position: 'Founder/President',
+    team: 'Board of Leader'
+  },
+  {
+    id: 6,
+    avatar: '/lead.png',
+    name: 'Tran Manh Dung',
+    position: 'Founder/President',
+    team: 'Board of Leader'
+  }
+])
 </script>
