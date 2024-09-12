@@ -1,5 +1,5 @@
 <template>
-  <UContainer class="mt-8 flex flex-col items-center gap-12">
+  <UContainer class="my-8 flex flex-col items-center gap-12">
     <div class="w-full max-w-[500px]">
       <CommonTitleText prefix="Find your most" text="suitable position" />
     </div>
@@ -7,7 +7,24 @@
       <CommonSearch />
       <USelect v-model="teamSelect" :options="teams" size="lg" />
     </div>
-    <JobsNoJobsFound />
+    <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+      <JobsItem
+        v-for="job in jobs"
+        :key="job.id"
+        :id="job.id"
+        :position="job.position"
+        :team="job.team"
+        :job-description="job.jobDescription"
+        :tag="job.tag"
+      />
+    </div>
+    <UButton
+      label="Explore more positions"
+      class="w-[300px] justify-center rounded-full"
+      size="xl"
+    />
+    <HomeBenefits class="mt-16" />
+    <JobsHiringProcess class="mt-16" />
   </UContainer>
 </template>
 
@@ -43,6 +60,30 @@ const jobs = ref([
   },
   {
     id: 3,
+    position: 'Frontend Developer',
+    team: 'Technical',
+    jobDescription:
+      'Lorem ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum',
+    tag: 'New'
+  },
+  {
+    id: 4,
+    position: 'Frontend Developer',
+    team: 'Technical',
+    jobDescription:
+      'Lorem ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum',
+    tag: 'New'
+  },
+  {
+    id: 5,
+    position: 'Frontend Developer',
+    team: 'Technical',
+    jobDescription:
+      'Lorem ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum ipsum',
+    tag: 'New'
+  },
+  {
+    id: 6,
     position: 'Frontend Developer',
     team: 'Technical',
     jobDescription:
