@@ -1,6 +1,13 @@
 <template>
   <div class="relative w-fit">
-    <UBadge :label="label" :color="color" variant="outline" size="lg" class="relative" />
+    <UBadge
+      :label="label"
+      :color="color"
+      variant="outline"
+      size="lg"
+      class="relative hidden md:block"
+    />
+    <UBadge :label="label" :color="color" variant="outline" size="sm" class="relative md:hidden" />
     <div v-if="label === 'Board of Leader'" class="absolute bottom-[0.5px] flex h-[2px] w-full">
       <div class="bg-primary grow rounded-bl-lg"></div>
       <div class="grow bg-red-500"></div>
