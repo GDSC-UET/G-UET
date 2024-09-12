@@ -3,8 +3,10 @@
     <UContainer class="relative flex flex-col">
       <CommonLogo />
       <div class="flex w-full flex-col space-y-6 sm:flex-row sm:justify-between sm:space-y-0">
-        <CommonCopyRight />
-        <CommonSocialNavigation />
+        <span class="pt-4 text-sm text-gray-600 sm:pt-10 sm:text-base">
+          © Copyright 2024, All Rights Reserved by Google Deveploper Student Clubs - UET
+        </span>
+        <FooterSocialNavigation />
       </div>
     </UContainer>
   </div>
