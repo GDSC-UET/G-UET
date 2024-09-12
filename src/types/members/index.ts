@@ -29,3 +29,14 @@ export type MembersDetailInformationProps = {
 export type MembersDetailAwardsProps = {
   awards: string[]
 }
+
+export type MembersBadge = {
+  label: string
+}
+
+export type MembersCard = {
+  avatar: string
+  name: string
+  position: string
+  team: string
+}
