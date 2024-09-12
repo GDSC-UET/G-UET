@@ -1,7 +1,10 @@
 <template>
-  <UContainer class="flex h-[200px] flex-col text-black md:flex-row">G-UET</UContainer>
+  <UContainer class="mb-16 flex flex-col gap-20 text-black">
+    <HomeBanner />
+    <HomeAboutUs />
+    <HomeBenefits />
+    <HomeWeAlways />
+  </UContainer>
 </template>
 
-<script setup>
-const a = 'a'
-</script>
+<script setup lang="ts"></script>
