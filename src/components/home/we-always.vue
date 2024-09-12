@@ -14,7 +14,11 @@
       </div>
     </div>
     <span>{{ details[currentIndex] }}</span>
-    <UButton size="xl" class="px-20" :ui="{ rounded: 'rounded-full' }">Join us now</UButton>
+    <nuxt-link to="/jobs">
+      <UButton size="xl" class="px-20" :ui="{ rounded: 'rounded-full' }"
+        >Join us now</UButton
+      ></nuxt-link
+    >
   </div>
 </template>
 
